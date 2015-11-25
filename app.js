@@ -3,6 +3,15 @@ var navElement=document.getElementById('documentNav'),
   unorderedList=document.getElementById('navUl'),
   linkTag=document.getElementByTagName('a');
 
-  function navClick(){
-    
-  }
+
+    function showTheMenu(){
+        unorderedList.style.display='block';
+    }
+
+    function hideTheMenu(){
+        unorderedList.style.display='none';
+    }
+
+    function navClick(){
+        
+    }
