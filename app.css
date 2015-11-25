@@ -18,6 +18,7 @@ nav{
   left:0;
   width:100%;
   background-color: rgb(255,255,255);
+  font-family:'open-sans', sans-serif;
 }
 nav li a{
   color:rgb(0,0,72);
@@ -36,14 +37,19 @@ nav ul{
 }
 section{
   margin-top:150px;
+  font-family:'open-sans', sans-serif;
 }
 h1{
   color: rgb(255,255,255);
   text-align:center;
+  font-family:'open-sans', sans-serif;
 }
 p{
   color:rgb(255,255,255);
   font-size: 2em;
+  font-family:'open-sans', sans-serif;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 footer{
   background-color:rgb(255,255,255);
@@ -56,6 +62,7 @@ footer p{
   color:rgb(0,0,72);
   font-size: 1em;
   text-align:center;
+  font-family:'open-sans', sans-serif;
 }
 
 @media (min-width:900px){
