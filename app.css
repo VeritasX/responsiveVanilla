@@ -26,14 +26,17 @@ nav{
   background-color: rgb(255,255,255);
   font-family:'open-sans', sans-serif;
 }
-nav li a{
+nav li{
   color:rgb(0,0,72);
   text-align:center;
-  display:inline-block;
-  text-decoration: none;
+  display:block;
   line-height: 2em;
   width:100%;
   padding:0;
+}
+nav a{
+  text-decoration: none;
+  color:rgb(0,0,72);
 }
 nav ul{
   list-style: none;
@@ -73,8 +76,21 @@ footer p{
 }
 
 @media (min-width:900px){
-
-
+  nav{
+    height:50px;
+  }
+  nav ul{
+    margin-top:1em;
+    text-align: center;
+  }
+  nav li{
+    display:inline;
+    text-align:none;
+    padding-left:2em;
+  }
+  button{
+    display: none;
+  }
 
 
 }
