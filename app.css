@@ -83,7 +83,7 @@ footer p{
   nav ul{
     margin-top:1em;
     text-align: center;
-    display:block;
+    display:block !Important;
   }
   nav li{
     display:inline;
