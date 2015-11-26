@@ -3,11 +3,19 @@ var navElement=document.getElementById('documentNav'),
   unorderedList=document.getElementById('navUl'),
   linkTag=document.getElementsByTagName('a');
 
-
-menuButton.onclick=function (){
-  if ( unorderedList.style.display != 'none' ) {
-      unorderedList.style.display = 'none';
-      }else {
-        unorderedList.style.display = 'block';
+  function navClick (){
+    if ( unorderedList.style.display != 'none' ) {
+        unorderedList.style.display = 'none';
+        }else {
+          unorderedList.style.display = 'block';
+        }
+      };
+      function ready(navClick) {
+        if (document.readyState != 'loading'){
+          navClick();
+        } else {
+          document.addEventListener('DOMContentLoaded', fn);
+        }
       }
-    };
+
+menuButton.onclick=navClick();
