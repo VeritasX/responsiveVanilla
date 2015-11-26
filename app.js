@@ -4,10 +4,10 @@ var navElement=document.getElementById('documentNav'),
   linkTag=document.getElementsByTagName('a');
 
 
-menuButton.addEventListener('click', function (){
+menuButton.onclick=function (){
   if ( unorderedList.style.display != 'none' ) {
       unorderedList.style.display = 'none';
       }else {
         unorderedList.style.display = 'block';
       }
-    });
+    };
