@@ -1,21 +1,23 @@
-var navElement=document.getElementById('documentNav'),
-  menuButton=document.getElementById('menuToggleClose'),
-  unorderedList=document.getElementById('navUl'),
-  linkTag=document.getElementsByTagName('a');
+var navElement=document.getElementById('documentNav');
+var unorderedList=document.getElementById('navUl');
+var linkTag=document.getElementsByTagName('a');
+var listElement=document.getElementsByTagName('li')
+var menuToggle =document.getElementById('menuToggleClose');
 
-  function navClick (){
-    if ( unorderedList.style.display != 'none' ) {
-        unorderedList.style.display = 'none';
-        }else {
-          unorderedList.style.display = 'block';
-        }
-      };
-      function ready(navClick) {
-        if (document.readyState != 'loading'){
-          navClick();
-        } else {
-          document.addEventListener('DOMContentLoaded', fn);
-        }
+  function menuClick(){
+        if ( unorderedList.style.display != 'none' ) {
+            unorderedList.style.display = 'none';
+            }else {
+              unorderedList.style.display = 'block';
+            }
+  }
+
+  function closeMenuAfterClick(){
+      if (unorderedList.style.display != 'none'){
+          unorderedList.style.display ='none';
       }
+  }
 
-menuButton.onclick=navClick();
+    menuToggle.addEventListener('click', menuClick );
+
+    linkTag.addEventListener('click', closeMenuAfterClick);
