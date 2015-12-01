@@ -73,7 +73,38 @@ This Section contains the CSS properties for the slideshow componant
   height:15em;
   border:rgb(255, 255, 255) solid 1px;
   margin-top:40px;
+  display: inline-block;
 
+}
+
+.inside{
+  width:100%;
+  height:15em;
+  padding: 0;
+  margin:0;
+  display: inline-block;
+}
+.inside h1{
+  color: rgb(255,255,255);
+  text-align:center;
+  font-family:'open-sans', sans-serif;
+  font-size:2em;
+  padding-top:2em;
+
+}
+.inner1{
+  display:inline-block;
+  width:100%;
+  height:100%;
+}
+.inner2{
+  display:none;
+}
+.inner3{
+  display:none;
+}
+.inner4{
+  display:none;
 }
 
 
